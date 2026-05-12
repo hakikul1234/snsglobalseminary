@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - S.N.S GLOBAL SEMINARY{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>About S.N.S GLOBAL SEMINARY</h1>
+      <p>Proudly Celebrating 15 Years of Academic Excellence</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Our Story</h3>
+        <p>S.N.S GLOBAL SEMINARY was founded in 2011 with a vision to provide quality education that develops intellectually, morally, and physically capable individuals. Over nearly one half-decade, we have successfully educated thousands of students who are now making significant contributions to society.</p>
+        <p>Our commitment to excellence is reflected in our state-of-the-art facilities, dedicated faculty, and a comprehensive curriculum designed to meet the needs of modern learners.</p>
+        <h3>Our Mission</h3>
+        <p>To provide a comprehensive educational experience that nurtures intellectual growth, character development, and leadership qualities in every student.</p>
+        <h3>Our Vision</h3>
+        <p>To be a leading educational institution recognized for academic excellence, innovative teaching methods, and the holistic development of students.</p>
+      </div>
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/main.jpeg') }}" alt="S.N.S GLOBAL SEMINARY Campus">
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section style="background: var(--light-gray);">
+    <div class="container">
+      <h2>Our Core Values</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+            <h3 style="color:white">Excellence</h3>
+          </div>
+          <div class="card-content">
+            <p>We strive for excellence in every aspect of our educational endeavor.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
+            <h3 style="color:white">Integrity</h3>
+          </div>
+          <div class="card-content">
+            <p>Honesty and ethical conduct are the foundation of our institution.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🌟</div>
+            <h3 style="color:white">Innovation</h3>
+          </div>
+          <div class="card-content">
+            <p>We embrace modern teaching methods and educational innovation.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">❤️</div>
+            <h3 style="color:white">Care</h3>
+          </div>
+          <div class="card-content">
+            <p>We care deeply about the well-being and development of our students.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+            <h3 style="color:white">Inclusivity</h3>
+          </div>
+          <div class="card-content">
+            <p>We welcome and celebrate diversity in our school community.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+            <h3 style="color:white">Growth</h3>
+          </div>
+          <div class="card-content">
+            <p>We support continuous learning and personal development for all.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section class="container">
+    <h2>Our Leadership</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div style="background: linear-gradient(135deg, #800000 0%, #4b0000 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><img src="{{ url_for('static', filename='images/dr.jpeg') }}" alt="Dr. Surendra Kumar Singh" style="max-height: 100%; max-width: 100%;"></div>
+        <div class="card-content">
+          <h3>Dr. Surendra Kumar Singh</h3>
+          <p><strong>Director</strong></p>
+          <p>With 25 years of experience in education, Dr. Singh leads our institution with vision and dedication.</p>
+        </div>
+      </div>
+  </section>
+{% endblock %}

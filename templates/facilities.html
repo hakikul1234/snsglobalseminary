@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}Facilities - S.N.S GLOBAL SEMINARY{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our World-Class Facilities</h1>
+      <p>Equipped with Modern Resources for Optimal Learning</p>
+    </div>
+  </section>
+
+  <!-- Facilities Grid -->
+  <section class="container">
+    <h2>Learning Spaces</h2>
+    <div class="card-grid">
+      <div class="card animate-fade-in">
+        <img src="{{ url_for('static', filename='images/classroom.jpg') }}" alt="Modern Classrooms" class="card-image">
+        <div class="card-content">
+          <h3>Modern Classrooms</h3>
+          <p>Spacious, well-ventilated classrooms equipped with interactive smart boards, multimedia projectors, and comfortable seating for interactive learning.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <img src="{{ url_for('static', filename='images/library.jpg') }}" alt="Digital Library" class="card-image">
+        <div class="card-content">
+          <h3>Digital Library</h3>
+          <p>Our comprehensive library houses thousands of books, journals, and digital resources. Students have access to online databases and e-learning platforms.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <img src="{{ url_for('static', filename='images/computer-lab.jpg') }}" alt="Computer Labs" class="card-image">
+        <div class="card-content">
+          <h3>Computer Labs</h3>
+          <p>State-of-the-art computer labs with high-speed internet connectivity, programming software, and individual workstations for each student.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <img src="{{ url_for('static', filename='images/science-lab.jpg') }}" alt="Science Labs" class="card-image">
+        <div class="card-content">
+          <h3>Science Laboratories</h3>
+          <p>Well-equipped physics, chemistry, and biology labs with modern equipment for practical experiments and hands-on learning experiences.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <img src="{{ url_for('static', filename='images/sports.jpg') }}" alt="Sports Complex" class="card-image">
+        <div class="card-content">
+          <h3>Sports Complex</h3>
+          <p>Comprehensive sports facilities including basketball courts, volleyball courts, badminton courts, tennis courts, and a well-equipped gymnasium.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <img src="{{ url_for('static', filename='images/auditorium.jpg') }}" alt="Auditorium" class="card-image">
+        <div class="card-content">
+          <h3>Auditorium</h3>
+          <p>A multi-purpose auditorium with professional sound and lighting systems for school events, cultural programs, and educational seminars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Amenities -->
+  <section style="background: var(--light-gray);">
+    <div class="container">
+      <h2>Additional Amenities</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 , #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🍽️</div>
+            <h3 style="color:white">Cafeteria</h3>
+          </div>
+          <div class="card-content">
+            <p>A hygienic cafeteria serving nutritious meals prepared by experienced chefs with vegetarian and non-vegetarian options.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 , #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🚌</div>
+            <h3 style="color:white">Transportation</h3>
+          </div>
+          <div class="card-content">
+            <p>Safe and reliable transportation services with GPS tracking and trained drivers covering all areas of the city.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 , #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🏥</div>
+            <h3 style="color:white">Medical Facility</h3>
+          </div>
+          <div class="card-content">
+            <p>On-campus medical clinic with qualified nurses and first-aid services for student health and safety.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 , #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+            <h3 style="color:white">Art Studio</h3>
+          </div>
+          <div class="card-content">
+            <p>Well-equipped art and music studios for creative expression and development of artistic talents.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 , #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
+            <h3 style="color:white">Security</h3>
+          </div>
+          <div class="card-content">
+            <p>24/7 CCTV surveillance, trained security personnel, and strict access control for student safety.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 , #4b0000 100%); color: white;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+            <h3 style="color:white">Counseling Center</h3>
+          </div>
+          <div class="card-content">
+            <p>Professional counselors provide academic and personal guidance to support student development and well-being.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white; padding: 3rem 1rem; text-align: center;">
+    <div class="container">
+      <h2 style="color: white; border: none;">Experience Our Facilities</h2>
+      <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 2rem;">Schedule a campus tour and discover why Excellence Academy is the right choice for your child.</p>
+      <a href="/contact" class="cta-button">Schedule a Tour</a>
+    </div>
+  </section>
+{% endblock %}

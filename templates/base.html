@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="MD HAKIKUL">
+  <title>{% block title %}S.N.S GLOBAL SEMINARY{% endblock %}</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/logo.jpeg') }}" type="image/x-icon">
+  <meta name="description" content="S.N.S GLOBAL SEMINARY - A premier educational institution dedicated to providing quality education and holistic development.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <div class="logo">S.N.S GLOBAL SEMINARY</div>
+      <button class="menu-toggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/facilities">Facilities</a></li>
+          <li><a href="/classes">Classes</a></li>
+          <li><a href="/fees">Fees</a></li>
+          <li><a href="/admission">Admission</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 S.N.S GLOBAL SEMINARY. All rights reserved.</p>
+      <p>Building Tomorrow&apos;s Leaders Today</p>
+      <p>Email: seminarysnsglobal@gmail.com | Phone: +91 8935908342 +91 9279211509</p>
+      <p>Director Contact No:+91 8935908342</p>
+      <p>Address:Nirmali,Supaul,Bihar</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

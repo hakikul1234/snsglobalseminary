@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}Home - S.N.S GLOBAL SEMINARY{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to S.N.S GLOBAL SEMINARY</h1>
+      <p>Nurturing Minds, Building Futures, Shaping Leaders</p>
+      <p><strong>U-Dise Code:10060503601</strong></p>
+      <p style="color:black"><strong><em>Session:2026-2027</em></strong></p>
+      <a href="/admission" class="cta-button">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container">
+    <h2>Why Choose S.N.S GLOBAL SEMINARY?</h2>
+    <div class="card-grid">
+
+      <div class="card animate-fade-in">
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+          <h3 style="color:white">Expert Faculty</h3>
+        </div>
+        <div class="card-content">
+          <p>Our experienced and dedicated teachers are committed to providing quality education and personalized attention to every student.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+          <h3 style="color:white">RTE Facilities</h3>
+        </div>
+        <div class="card-content">
+          <p>Enrollment facility under the RTE scheme is available for eligible students.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">⚽</div>
+          <h3 style="color:white">Sports & Activities</h3>
+        </div>
+        <div class="card-content">
+          <p>Comprehensive sports facilities and co-curricular activities to develop physical fitness and leadership qualities.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">💻</div>
+          <h3 style="color:white">Modern Technology</h3>
+        </div>
+        <div class="card-content">
+          <p>State-of-the-art computer labs and digital learning resources to prepare students for the modern world.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+          <h3 style="color:white">Global Perspective</h3>
+        </div>
+        <div class="card-content">
+          <p>International curricula and exchange programs to foster global awareness and cross-cultural understanding.</p>
+        </div>
+      </div>
+
+      <div class="card animate-fade-in">
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">❤️</div>
+          <h3 style="color:white">Holistic Development</h3>
+        </div>
+        <div class="card-content">
+          <p>We focus on developing well-rounded individuals with strong moral values and character education.</p>
+        </div>
+      </div>
+
+    </div>
+</section>
+<section class="container">
+    <h2>School Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item animate-fade-in">
+        <img src="{{ url_for('static', filename='images/gallery1.jpeg') }}" alt="Campus View" class="gallery-image">
+      </div>
+      <div class="gallery-item animate-fade-in">
+        <img src="{{ url_for('static', filename='images/gallery2.jpeg') }}" alt="Campus View" class="gallery-image">
+      </div>
+      <div class="gallery-item animate-fade-in">
+        <img src="{{ url_for('static', filename='images/gallery3.jpeg') }}" alt="Campus View" class="gallery-image">
+      </div>
+      </div>
+      <div class="gallery-item animate-fade-in">
+        <img src="{{ url_for('static', filename='images/gallery4.jpeg') }}" alt="Campus View" class="gallery-image">
+      </div>  
+      <div class="gallery-item animate-fade-in">
+        <img src="{{ url_for('static', filename='images/gallery5.jpeg') }}" alt="Campus View" class="gallery-image">  
+    </div>
+      <div class="gallery-item animate-fade-in">
+        <img src="{{ url_for('static', filename='images/gallery6.jpeg') }}" alt="Campus View" class="gallery-image">  
+  </div>
+</section>
+<!-- Call to Action -->
+<section style="background: linear-gradient(135deg, #800000 0%, #4b0000 100%); color: white; padding: 3rem 1rem; text-align: center;">
+    <div class="container">
+      <h2 style="color: white; border: none;">Ready to Join S.N.S GLOBAL SEMINARY?</h2>
+      <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 2rem;">
+        Begin your journey towards academic excellence and personal growth.
+      </p>
+      <a href="/admission" class="cta-button">Start Your Application</a>
+    </div>
+</section>
+
+{% endblock %}
